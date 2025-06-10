@@ -1,78 +1,75 @@
-/* Стиль для тега body */
-body {
-    color: black;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+body
+{
+    color: #009933; 
+    font-size: 14px;
+    font-family: Arial; 
+
 }
 
-/* Абзац с разряженным интервалом между буквами */
-p {
-    letter-spacing: 0.1em;
+.p23
+{
+    letter-spacing: 10px; /* интервал*/
+
 }
 
-/* Класс для второго абзаца - курсив и подчеркивание */
-.italic-underline {
-    font-style: italic;
-    text-decoration: underline;
+.kursiv
+{
+    font-style: italic; /* курсив */
+    text-decoration: underline; /* Подчеркивает */
 }
 
-/* Класс для третьего абзаца */
-.third-paragraph {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 25pt;
-    text-indent: 50px;
+.third_abz
+{
+    font-family: "Comic Sans"; 
+    font-size: 25px; 
+    text-indent: 50px; /*отступ*/
+}
+.rich
+{
+    font-family: Arial;
+    font-size: 15px; 
+    font-weight: bold; /*жирный */
+    font-style: italic; /*курсив */
+    color: orange; 
+    line-height: 25px; /*высота*/
 }
 
-/* Класс .rich для пятого абзаца */
-.rich {
-    font-family: Arial, sans-serif;
-    font-size: 15pt;
-    font-weight: bold;
-    font-style: italic;
-    color: orange;
-    line-height: 25pt;
+.perenos
+{
+    white-space:normal;
 }
 
-/* Класс .perenos - запрет переноса слов */
-.perenos {
-    white-space: nowrap;
+.red
+{
+    color: red; 
+    text-transform: uppercase; /*верхний регистр */
 }
 
-/* Класс для заглавных красных букв */
-.caps-red {
-    font-family: Courier, monospace;
+.custom-text
+{
+    font-family: Courier; 
     font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    text-decoration: underline;
-    text-indent: 2cm;
-    line-height: 2;
-    color: red;
+    text-transform: uppercase; /*заглавные*/
+    letter-spacing: 200%; /*интервал*/
+    text-decoration: underline; /*подчеркнутый */
+    text-indent: 2cm; /* Красная строка 2 см */
+    line-height: 2; /* Междустрочный интервал двойной */
 }
-
-/* Пользовательские классы с 3-4 свойствами */
 .custom-class-1 {
-    font-family: Tahoma, sans-serif;
-    font-size: 18px;
-    color: blue;
-    text-align: justify;
-}
-
-.custom-class-2 {
     font-family: "Times New Roman", serif;
     font-weight: lighter;
     font-size: 24px;
     color: darkgreen;
 }
 
-.custom-class-3 {
+.custom-class-2 {
     font-family: Verdana, sans-serif;
     font-style: italic;
     font-size: 20px;
     color: purple;
 }
 
-.custom-class-4 {
+.custom-class-3 {
     font-family: Georgia, serif;
     font-weight: bold;
     font-size: 18px;
