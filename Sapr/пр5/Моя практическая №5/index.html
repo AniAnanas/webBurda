@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .menu1 {
+            color: blue; 
+            list-style-position: inside;}
+        .menu1 a:link, .menu1 a:visited{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            }
+        .menu1 a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        /* 1 */
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .menu2 {list-style-type: none; width: 200px}
+        .menu2 li{margin-bottom: 5px;}
+        .menu2 a:link, .menu2 a:visited{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid blue;
+            display: block;
+            padding: 0px 5px;   
+            line-height: 30px;
+        }
+        .menu2 a:hover{
+        font-weight: bold;
+        }
+        /* 2 */
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .menu3 {list-style-type: none; width: 200px}
+        .menu3 li{margin-bottom: 5px;}
+        .menu3 a:link, .menu3 a:visited{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.733);
+            font: 13px Arial;
+            border: 1px solid rgb(0, 0, 0);
+            display: block;
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+        .menu3 a:hover{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0, 0.733);
+            background-color: rgba(255, 255, 255);
+        }
+        /* 3 */
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        .menu4 {list-style-type: none; width: 200px}
+        .menu4 li{margin-bottom: 5px;}
+        .menu4 a:link, .menu4 a:visited{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: rgb(1, 115, 209);
+            font: 13px Arial;
+            border: 1px solid blue;
+            display: block;
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+        .menu4 a:hover{
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+            background-color: rgba(255, 255, 255);
+        }
+        .hidden-img{
+            width: 20px ;
+            height: 20px;
+            float: right;
+            margin: 5px;
+
+        }
+        /* 4 */
+        .menu5 {list-style-type: none;}
+        .menu5 li{margin-right: 4px; float: left;}
+        .menu5 a:link, .menu5 a:visited{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid #1A31A2;
+            padding: 5px;
+        }
+        .menu5 a:hover, .menu5 a.active{
+            color: red;
+            
+        }
+        /* 5 */
+        .menu6 {list-style-type: none;}
+        .menu6 li{margin-right: 4px; float: left;}
+        .menu6 a:link, .menu6 a:visited{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid #1A31A2;
+            padding: 5px;
+        }
+        .menu6 a:hover, .menu6 a.active{
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.808);
+            
+        }
+
+        /* 6 */
+        .menu7 {
+            margin-top: 50px;
+            width: 45%;
+            color: #9AA5AD;
+            font: 15px Arial;
+        }
+        .menu7 td{
+            text-align: center;
+        }
+        .menu7 td:hover{
+            color: rgb(53,121,225);
+        }
+        .setting{
+            width: 50px;
+            height: 50px;
+        }
+        .setting:hover{
+            filter: grayscale(100%) invert(100%) sepia(100%) saturate(500%) hue-rotate(180deg);
+        }
+        /* 7 */
+        .menu8 {list-style-type: none;
+            display: flex;
+            background-color:rgba(255, 81, 0, 0.849);
+            padding: 5px;
+            width: 350px;}
+        .menu8 li{margin-right: 0px; float: left;}
+        .menu8 a:link, .menu8 a:visited{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font: 13px Arial;
+            padding: 8px 6px 6px;
+            width: 500px;
+        }
+        .menu8 a:hover, .menu8 a.active{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 0, 0);
+            
+        }
+        /* 8 */
+        .calendar{
+            border-collapse:collapse;
+            width: 180px;
+            margin-top: 50px;
+            font: 13px Arial;
+        }
+        .calendar th, .calendar td{
+            text-align: center;
+        }
+        .calendar th{
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+        .weekend{
+            color: grey;
+        }
+        .calendar td:hover{
+            color: red;
+            cursor: pointer;
+        }
+        /* 9 */
+
+    </style>
+</head>
+<body>
+    <ul class = "menu1">
+        <li> <a href="#" >Главная</a> </li>
+        <li> <a href="#" >Новости</a> </li>
+        <li> <a href="#" >Контакты</a> </li>
+        <li> <a href="#" >О компании</a> </li>
+        <li> <a href="#" >Как добраться</a> </li>
+       <br>
+    </ul>
+    <ul class = "menu2">
+        <li> <a href="#" >Главная</a> </li>
+        <li> <a href="#" >Новости</a> </li>
+        <li> <a href="#" >Контакты</a> </li>
+        <li> <a href="#" >О компании</a> </li>
+        <li> <a href="#" >Как добраться</a> </li>
+        <br>
+    </ul>
+
+    <ul class = "menu3">
+        <li> <a href="#" >Главная</a> </li>
+        <li> <a href="#" >Новости</a> </li>
+        <li> <a href="#" >Контакты</a> </li>
+        <li> <a href="#" >О компании</a> </li>
+        <li> <a href="#" >Как добраться</a> </li>
+        <br>
+    </ul>
+
+    <ul class = "menu4">
+        <li> <a href="#"> <img class="hidden-img" src="plane_page_4.png">Главная</a> </li>
+        <li> <a href="#"> <img class="hidden-img" src="plane_page_4.png">Новости</a> </li>
+        <li> <a href="#"> <img class="hidden-img" src="plane_page_4.png">Контакты</a> </li>
+        <li> <a href="#"> <img class="hidden-img" src="plane_page_4.png">О компании</a> </li>
+        <li> <a href="#"> <img class="hidden-img" src="plane_page_4.png">Как добраться</a> </li>
+        <br>
+    </ul>
+
+    <ul class = "menu5">
+        <li> <a href="#" >Главная</a> </li>
+        <li> <a href="#" >Новости</a> </li>
+        <li> <a href="#" >Контакты</a> </li>
+        <li> <a href="#" >О компании</a> </li>
+        <li> <a href="#" >Как добраться</a> </li>
+        <br>
+    </ul>
+    <hr>
+    <ul class = "menu6">
+        <li> <a href="#" >Главная</a> </li>
+        <li> <a href="#" >Новости</a> </li>
+        <li> <a href="#" >Контакты</a> </li>
+        <li> <a href="#" >О компании</a> </li>
+        <li> <a href="#" >Как добраться</a> </li>
+        <br>
+    </ul>
+    
+    <table class="menu7">
+        <tr>
+            <td><img class="setting" src="взлет.png"></td>
+            <td><img class="setting" src="посадка.png"></td>
+            <td><img class="setting" src="поезд.png"></td>
+            <td><img class="setting" src="отель.png"></td>
+            <td><img class="setting" src="туризм.png"></td>
+
+        </tr>
+        <tr>
+            <td>авиабилеты </a></td>
+            <td>чартеры </a></td>
+            <td>ж/д билеты </a></td>
+            <td>гостиницы </a></td>
+            <td>туризм </a></td>
+        </tr>
+    </table>
+    <hr>
+    <ul class = "menu8">
+        <li> <a href="#" >HOME</a> </li>
+        <li> <a href="#" >BLOG</a> </li>
+        <li> <a href="#" >PHOTOS</a> </li>
+        <li> <a href="#" >ABOUT</a> </li>
+        <li> <a href="#" >LINKS</a> </li>
+        <li> <a href="#" >CONTACT</a> </li>
+    </ul>
+
+    <table class="calendar">
+        <thead>
+            <tr>
+                <th>Пн</th>
+                <th>Вт</th>
+                <th>Ср</th>
+                <th>Чт</th>
+                <th>Пт</th>
+                <th class="weekend">Сб</th>
+                <th class="weekend">Вс</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="weekend">1</td>
+                <td class="weekend">2</td>   
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td class="weekend">8</td>
+                <td class="weekend">9</td>    
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td class="weekend">15</td>
+                <td class="weekend">16</td>    
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td class="weekend">22</td>
+                <td class="weekend">23</td>    
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td class="weekend">29</td>
+                <td class="weekend">30</td>   
+            </tr>
+            <tr>
+                <td>31</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

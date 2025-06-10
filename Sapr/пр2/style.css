@@ -1,0 +1,44 @@
+body{
+    color: #009933; 
+    font-size: 14px;
+    font-family: Arial; 
+
+}
+.p23{
+    letter-spacing: 10px; /* интервал*/
+
+}
+.kursiv{
+    font-style: italic; /* курсив */
+    text-decoration: underline; /* Подчеркивает*/
+
+}
+.none1{
+    font-family:Comic Sans; 
+    font-size: 20px; 
+    text-indent: 50px; /*отступ*/
+}
+.rich{
+    font-family: Arial;
+    font-size: 20px; 
+    font-weight; 
+    font-style: italic; 
+    color: orange; 
+    line-height: 25px; /*высота*/
+}
+.perenos{
+    white-space:normal;
+}
+.red{
+    color: red; 
+    text-transform: uppercase; /*верхний регистр */
+}
+.custom-text{
+    font-family: Courier; 
+    font-size: 12pt;
+    text-transform: uppercase; /*заглавные*/
+    letter-spacing: 200%; /*интервал*/
+    text-decoration: underline; /*подчеркнутый */
+    text-indent: 2cm; /* Красная строка 2 см */
+    line-height: 2; /* Междустрочный интервал двойной */
+}

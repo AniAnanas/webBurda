@@ -1,0 +1,20 @@
+.calendar{
+    border-collapse:collapse;
+    width: 180px;
+    margin-top: 50px;
+    font: 13px Arial;
+}
+.calendar th, .calendar td{
+    text-align: center;
+}
+.calendar th{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.weekend{
+    color: grey;
+}
+.calendar td:hover{
+    color: red;
+    cursor: pointer;
+}

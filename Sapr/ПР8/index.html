@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            background-color: #ffffff; 
+        }
+        .form-container {
+            
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 8px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            flex-basis: 54%;
+            border: 2px inset #cccccc;
+            
+        }
+        .radio{
+            border: 1px dashed black;
+            cursor: pointer;
+        }
+        h3{
+            color: darkgoldenrod;
+            
+        }
+        button{
+            border-radius: 20px;
+            cursor: pointer;
+            text-align: center; 
+            display: block;
+            margin: auto;
+            border: none;
+            font-size: 20px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+
+            <h3>Форма регистрации</h3>
+                <div class="form-group">
+                    <label for="fio">ФИО:</label>
+                    <input type="text" id="fio" name="fio" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Город:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+            <h3>Параметры доставки</h3>
+                <div class="form-group">
+                    <label for="address">Адрес</label><br>
+                    <input type="text" id="address" name="address">
+                </div>
+            
+                <div class="form-group">
+                    <label for="postal-code">Почтовый индекс</label><br>
+                    <input type="text" id="postal-code" name="postal-code">
+                </div>
+
+            <h3>Предпочитаемый способ получения уведомлений</h3>
+                <input type="radio" id="email" class="radio" name="notification-method" value="email">
+                <label for="email">По Email</label><br>
+                
+                <input type="radio" id="phone" class="radio" name="notification-method" value="phone">
+                <label for="phone">По телефону</label><br>
+                
+                <input type="radio" id="no-notify" class="radio" name="notification-method" value="no-notify">
+                <label for="no-notify">Не уведомлять меня</label>
+                <br><br>
+                <button type="submit">Отправить данные</button>
+        </div>
+    </div>
+</body>
+</html>
+
