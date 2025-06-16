@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Позиционирование</title>
+        <style>
+            body
+            {
+                background-color: #a9bd72;
+            }
+
+            .global-square
+            {
+                border: 5px groove mediumvioletred;
+                border-radius: 10px;
+                width: 400px;
+                height: 400px;
+            }
+
+            .square1, .square2, .square3
+            {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            }
+
+            .square1
+            {
+                border: 5px solid white;
+                margin:10px;
+            }
+
+            .square2
+            {
+                border: 5px solid blue;
+                margin:130px;
+            }
+
+            .square3
+            {
+                border: 5px solid red;
+                margin:250px;
+            }
+            /*1*/
+
+            hr
+            {
+                border: 0;
+                border-radius: 10px;
+                background-color: #d4ee8d;
+                height: 10px;
+            }
+
+            .task
+            {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                display: flex;
+            }
+
+            .task2-sq2
+            {
+                margin-top: 10px;
+            }
+
+            .task2-sq3
+            {
+                margin-top: 10px;
+            }
+            /*2*/
+
+            .task3-sq2
+            {
+                margin:80px;
+            }
+            .task3-sq3
+            {
+                margin:150px;
+            }
+            /*3*/
+
+
+
+            .task4-sq1
+            {
+                background-color: white;
+            }
+
+            .task4-sq2
+            {
+                margin:80px;
+                background-color: blue;
+            }
+
+            .task4-sq3
+            {
+                margin:150px;
+                background-color: red;
+            }
+            /*4*/
+
+
+            .task5-sq1
+            {
+                background-color: white;
+            }
+
+            .task5-sq2
+            {
+                margin:80px;
+                background-color: blue;
+                z-index: 1;
+            }
+
+            .task5-sq3
+            {
+                margin:150px;
+                background-color: red;
+            }
+            /*5*/
+
+            .task6-sq1
+            {
+                background-color: white;
+                z-index: 1;
+            }
+
+            .task6-sq2
+            {
+                margin:80px;
+                background-color: blue;
+                z-index: 0;  
+            }
+
+            .task6-sq3
+            {
+                margin:150px;
+                background-color: red;
+                z-index: 1;
+            }
+            /*6*/
+
+
+            .task7-sq1
+            {
+                background-color: white;
+                z-index: 1;
+            }
+
+            .task7-sq2
+            {
+                margin:80px;
+                background-color: blue;
+                z-index: 2;
+                
+            }
+
+            .task7-sq3
+            {
+                margin:150px;
+                background-color: red;
+                z-index: 3;
+            }
+            /*7*/
+
+            .square-gr
+            {
+                position: relative;
+                border: solid green;
+                margin: 10px;
+                height: 360px;
+            }
+
+            .square-red
+            {
+                position: absolute;
+                border: solid red;
+                height: 100px;
+                width: 100px;
+                margin-top: 80px;
+                margin-left: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./logo.png">
+        <pre>
+            Текст Текст Текст Текст Текст Текст Текст  Какой-то текст Текст Текст Текст Текст Текст
+        </pre>
+        <div class="global-square">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+        </div>
+    <!-- 1 -->
+        <hr>
+
+        <div class="global-square">
+            <div class="square1 task2-sq1"></div>
+            <div class="square2 task2-sq2"></div>
+            <div class="square3 task2-sq3"></div>
+        </div>
+    <!-- 2 -->
+        <hr>
+
+        <div class="global-square">
+            <div class="square1 task3-sq1"></div>
+            <div class="square2 task3-sq2"></div>
+            <div class="square3 task3-sq3"></div>
+        </div>
+    <!-- 3 -->
+        <hr>
+
+        <div class="global-square">
+            <div class="square1 task4-sq1"></div>
+            <div class="square2 task4-sq2"></div>
+            <div class="square3 task4-sq3"></div>
+        </div>
+    <!-- 4 -->
+        <hr>
+
+        <div class="global-square">
+            <div class="square1 task5-sq1"></div>
+            <div class="square2 task5-sq2"></div>
+            <div class="square3 task5-sq3"></div>
+        </div>
+    <!-- 5 -->
+        <hr>
+    
+        <div class="global-square">
+            <div class="square1 task6-sq1"></div>
+            <div class="square2 task6-sq2"></div>
+            <div class="square3 task6-sq3"></div>
+        </div>
+    <!-- 6 -->
+        <hr>
+
+        <div class="global-square">
+            <div class="square1 task7-sq1"></div>
+            <div class="square2 task7-sq2"></div>
+            <div class="square3 task7-sq3"></div>
+        </div>
+        
+        <hr>
+
+        <div class="global-square">
+            <div class="square-gr">
+                <div class="square-red"></div>
+            </div>
+        </div>
+    </body>
+</html>
