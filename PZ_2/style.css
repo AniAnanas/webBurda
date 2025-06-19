@@ -24,6 +24,7 @@ body
     font-size: 25px; 
     text-indent: 50px; /*отступ*/
 }
+
 .rich
 {
     font-family: Arial;
@@ -55,21 +56,24 @@ body
     text-indent: 2cm; /* Красная строка 2 см */
     line-height: 2; /* Междустрочный интервал двойной */
 }
-.custom-class-1 {
+.custom-class-1
+{
     font-family: "Times New Roman", serif;
     font-weight: lighter;
     font-size: 24px;
     color: darkgreen;
 }
 
-.custom-class-2 {
+.custom-class-2
+{
     font-family: Verdana, sans-serif;
     font-style: italic;
     font-size: 20px;
     color: purple;
 }
 
-.custom-class-3 {
+.custom-class-3
+{
     font-family: Georgia, serif;
     font-weight: bold;
     font-size: 18px;
