@@ -7,18 +7,19 @@
         <style>
             hr
             {
-                background-color: brown;
-                height: 20px;
+                border: 0;
+                border-radius: 5px;
+                background-color: #272727;
+                height: 6px;
             }
 
-            .square-gr
+            .square-mint
             {
-                background-color: green;
+                background-color: mediumspringgreen;
                 width: 500px;
-                height: 500px;
+                height: 380px;
             }
-
-            .square-wh
+            .square-wh, .square-wh2
             {
                 background-color: white;
                 width: 100px;
@@ -26,24 +27,19 @@
                 position: absolute;
                 margin: 25px;
             }
-
             .square-wh2
             {
-                background-color: rgb(255, 255, 255);
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                margin-top: 375px;
+                margin-top: 255px;
                 margin-left: 375px;
             }
             
+
             .traffic_lights
             {
                 width: 200px;
                 height: 420px;
                 border: solid grey;
             }
-            
             .lights
             {
                 width: 100px;
@@ -53,18 +49,11 @@
                 margin-top: 50px;
                 margin-left: 50px;
                 border-radius: 50px;
-                
             }
+            .yellow { margin-top:180px; }
             
-            .yellow
-            {
-                margin-top:180px;
-            }
+            .green { margin-top: 300px; }
             
-            .green
-            {
-                margin-top: 300px;
-            }
             
             .global-square
             {
@@ -73,6 +62,7 @@
                 height: 400px;
             }
             
+
             .smiley-face
             {
                 background-color: yellow;
@@ -83,39 +73,32 @@
                 border-radius: 100%;
             }
             
-            .eye_left
+            .eye_left, .eye_right
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 100px;
                 height: 100px;
                 border-radius: 100%;
-                position:absolute;
+                position: absolute;
                 margin-top: 50px;
-                margin-left:50px;
+                margin-left: 50px;
                 z-index: 3;
             }
             
             .eye_right
             {
-                background-color: rgb(255, 255, 255);
-                width: 100px;
-                height: 100px;
-                border-radius: 100%;
-                position:absolute;
-                margin-top: 50px;
-                margin-left:200px;
-                z-index: 3;
+                margin-left: 200px;
             }
             
             .nose
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 50px;
                 height: 50px;
                 border-radius: 100%;
                 position:absolute;
                 margin-top: 180px;
-                margin-left:150px;
+                margin-left: 150px;
                 z-index: 3;
             }
             
@@ -143,7 +126,7 @@
 
             .smiley-face-2
             {
-                background-color: rgb(9, 255, 0);
+                background-color: lime;
                 width: 350px;
                 height: 350px;
                 margin-top: 35px;
@@ -153,7 +136,7 @@
 
             .eye_left-2
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 70px;
                 height: 70px;
                 position:absolute;
@@ -164,7 +147,7 @@
             
             .eye_right-2
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 70px;
                 height: 70px;
                 position:absolute;
@@ -175,7 +158,7 @@
 
             .nose-2
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 50px;
                 height: 50px;
                 border-radius: 100%;
@@ -187,35 +170,25 @@
 
             .mouth2-2
             {
-                background-color: rgb(255, 255, 255);
+                background-color: white;
                 width: 150px;
                 height: 20px;
                 position: absolute;
                 margin-top: 270px;
                 margin-left: 100px;
             }
-
-            .text1
-            {
-                color: purple;
-                margin: 15px;
-            }
-
-            .kvadrat
-            {
-                border: purple  solid 5px;
-            }
         </style>
     </head>
     <body>
-        <div class="square-gr">
+        <div class="square-mint">
             <div class="square-wh"></div>
             <div class="square-wh2"></div>
         </div>
         <hr>
         <div class="traffic_lights">
             <div class="lights" style="background-color:red;"></div>
-            <div class="lights yellow" style="background-color: rgb(255, 234, 0);"></div>
+            <div class="lights yellow" style="background-color: yellow;"></div>
+            <div class="lights green" style="background-color: green;"></div>
         </div>
 
         <hr>
