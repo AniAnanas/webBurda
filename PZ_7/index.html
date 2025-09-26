@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Практическая работа №7</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            form {
+                margin-top: 10px;
+            }
+
+            textarea {
+                margin-top: 10px;
+                width: 220px;
+                height: 50px;
+            }
+
+            span {
+                margin-left: 10px;
+            }
+            
+            .resize textarea {
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            #label {
+                display: flex;
+                width: 80%;
+            }
+
+            #radio {
+                border: 1px black solid;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                padding: 5px 10px;
+            }
+
+            #ta1 {
+                resize: both;
+            }
+
+            #ta2 {
+                resize: none;
+            }
+
+            #ta3 {
+                resize: horizontal;
+            }
+
+            #ta4 {
+                resize: vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Плейсхолдер">
+        </form>
+        <form>
+            <input type="text" value="Value">
+        </form>
+        <form>
+            <input type="text" placeholder="disabled" disabled>
+        </form>
+        <form>
+            <input type="password" value="123456">
+        </form>  
+        <form>
+            <textarea placeholder="Введите текст" name="" id="" cols="30" rows="10"></textarea>
+        </form>
+        <form>
+            <input type="submit" value="Кнопка через тг input">
+        </form>
+        <form>
+            <button>Кнопка через тг button</button>
+        </form>
+
+        <form id="label">
+            <input type="text" placeholder="Плейсхолдер" id="input1">
+            <span>Это метка для инпута - <label for="input1">нажмите на меня </label>- и инпут получит фокус!</span>
+        </form>
+        <form>
+            <button>Отправить на сервер</button>
+        </form>
+
+        <form> 
+            <input type="checkbox" id="checkbox1">
+            <span>Это метка для чекбоксов:<label for="checkbox1">нажмите на меня</label> чекбокс сменит галочку!</span>
+        </form>
+        <form>    
+            <input type="checkbox" checked>
+            <span>Я отмечен по умолчанию!</span>
+        </form>
+        <form>
+            <input type="checkbox" disabled>
+            <span>Я disabled!</span>
+        </form>
+
+        <form id="radio">
+            <p>Эта группа радиокнопок - только одна из них может быть отмечена!</p>
+        <article>
+            <input type="radio" name="radio1">
+            <span>Это метка для радио</span>
+        </article> 
+        <article>
+            <input type="radio" name="radio1">
+            <span>Это метка для радио</span>
+        </article>
+        
+        </form>
+        <form>
+            <button>Отправить на сервер</button>
+        </form>
+        <form>
+            <select>
+                <option>Нью-Йорк</option>
+            </select>
+            <select multiple>
+                <option>Москва</option>
+                <option>Киев</option>
+                <option selected>Нью-Йорк</option>
+            </select>
+            <select>
+                <optgroup label="1">
+                    <option>Минск</option>
+                    <option>Москва</option>
+                    <option>Киев</option>
+                </optgroup>
+                <optgroup label="2">
+                    <option selected>Нью-Йорк</option>
+                    <option>Варшава</option>
+                </optgroup>
+            </select>
+            <button>Отправить на сервер</button>
+        </form>
+
+        <form>
+            <input type="file">
+            <button>Отправить на сервер</button>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Выберите кнопку</legend>
+                <input type="radio" name="1">
+                <input type="radio" name="1">
+                <input type="radio" name="1">
+                <input type="text" placeholder="Ваше имя...">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Выберите ещё кнопку</legend>
+                <input type="radio" name="2">
+                <input type="radio" name="2">
+                <input type="radio" name="2">
+                <input type="radio" name="2" disabled>
+                <input type="radio" name="2" disabled>
+            </fieldset>
+            <br>
+            <br>
+            <button>Отправить на сервер</button>
+        </form>
+
+        <form>
+            <article class="resize">
+                <textarea placeholder="Ограничена ширина и высота" name="" id="ta1" cols="30" rows="10"></textarea>
+                <textarea name="" id="ta2" cols="30" rows="10" id="ta2"></textarea>
+                <textarea name="" id="ta3" cols="30" rows="10" id="ta3"></textarea>
+                <textarea name="" id="ta4" cols="30" rows="10" id="ta4"></textarea>
+            </article>
+        </form>
+    </body>
+</html>
