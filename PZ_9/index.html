@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Практическая работа №9</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: #808080;
+            }
+            .block {
+                display: flex; 
+                border: 2px inset #000;
+            }
+            .block div {
+                padding: 8px;
+                text-align: center;
+            }
+            .coral {
+                background: lightcoral;
+            }
+            .blue {
+                background: lightblue;
+            }
+            .green {
+                background: lightgreen;
+            }
+            .fifth {
+                width: 80px; 
+                height: 40px;
+            }
+        </style>
+
+        <!-- Задание 1 -->
+        <div class="block" style="flex-direction: row; gap: 10px;">
+            <div class="coral">1</div>
+            <div class="blue">2</div>
+            <div class="green">3</div>
+        </div>
+        <div class="block" style="flex-direction: row-reverse; gap: 10px;">
+            <div class="coral">1</div>
+            <div class="blue">2</div>
+            <div class="green">3</div>
+        </div>
+        <div class="block" style="flex-direction: column; gap: 10px;">
+            <div class="coral">1</div>
+            <div class="blue">2</div>
+            <div class="green">3</div>
+        </div>
+        <div class="block" style="flex-direction: column-reverse; gap: 10px;">
+            <div class="coral">1</div>
+            <div class="blue">2</div>
+            <div class="green">3</div>
+        </div>
+        
+        <br>
+
+        <!-- Задание 2 -->
+        <div class="block" style="justify-content: flex-start;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        <div class="block" style="justify-content: flex-end;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        <div class="block" style="justify-content: center;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        <div class="block" style="justify-content: space-between;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        <div class="block" style="justify-content: space-around;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        <div class="block" style="justify-content: space-evenly;">
+            <div class="coral">A</div>
+            <div class="blue" >B</div>
+            <div class="green">C</div>
+        </div>
+        
+        <br>
+        
+        <!-- Задание 3 -->
+        <div class="block" style="align-items: baseline;">
+            <div style="font-size: 12px;">Text1</div>
+            <div style="font-size: 24px;">Text2</div>
+            <div style="font-size: 36px;">Text3</div>
+        </div>
+
+        <br>
+
+        <!-- Задание 4 -->
+        <div class="block" style="height: 100px;">
+            <div class="coral" style="align-self: flex-start;">Top</div>
+            <div class="blue" style="align-self: center;">Center</div>
+            <div class="green" style="align-self: flex-end;">Bottom</div>
+        </div>
+        
+        <br>
+
+        <!-- Задание 5 -->
+        <div class="block" style="flex-wrap: wrap; align-content: space-around; height: 200px;">
+            <div class="fifth coral">1</div>
+            <div class="fifth blue">2</div>
+            <div class="fifth green">3</div>
+            <div class="fifth" style="background: lightgoldenrodyellow;">4</div>
+            <div class="fifth" style="background: lightpink;">5</div>
+            <div class="fifth" style="background: lightgray;">6</div>
+        </div>
+
+        <br>
+
+        <!-- Задание 6 -->
+        <div class="block" style="flex-wrap: wrap; width: 200px;">
+            <div class="coral" style="width: 100px;">1</div>
+            <div class="blue" style="width: 100px;">2</div>
+            <div class="green" style="width: 100px;">3</div>
+        </div>
+
+    </body>
+</html>

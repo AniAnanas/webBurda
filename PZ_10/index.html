@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body { background-color: darkgray; }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                border: 1px black solid;
+                border-radius: 25px;
+                padding: 10px;
+                width: 300px;
+                justify-self: center;
+                margin-top: 200px;
+                align-items: center;
+                background-color: white;
+            }
+        
+            img { width: 30px; }
+
+            .form_input {
+                margin-bottom: 15px;
+                padding-left: 10px;
+            }
+
+            .input_long {
+                width: 90%;
+            }
+
+            .input_short {
+                width: 65%;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+
+            ::placeholder{ text-align: center; }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <img src="basket.svg" alt="">
+            <p>Личная информация</p>
+            <input type="text" class="form_input input_long" placeholder="ФИО">
+            <input type="date" class="form_input input_short" placeholder="Год рождения">
+            <input type="text" class="form_input input_long" placeholder="Место проживания">
+            <input type="text" class="form_input input_long" placeholder="Skype">
+            <input type="email" class="form_input input_long" placeholder="Email">
+        </form>
+    </body>
+</html>
