@@ -1,0 +1,343 @@
+.Square
+{
+     border: 5px groove indianred;
+     border-radius: 10px;
+     width: 400px;
+     height: 400px;
+     margin-top: 10px;
+}
+
+.RedSquare, .BlueSquare, .GreenSquare
+{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+.RedSquare
+{
+	border: 1px solid red;
+	margin: 10px;
+}
+.BlueSquare
+{
+	border: 1px solid blue;
+	margin: 130px;
+}
+.GreenSquare
+{
+	border: 1px solid green;
+	margin: 250px;
+}
+
+/* Второе Задание */
+.T2_1
+{
+     margin-top: 10px;
+}
+
+.T2_2
+{
+     margin-top: 10px;
+}
+
+.T2_3
+{
+     margin-top: 10px;
+}
+/* Третье Задание */
+.T3_1
+{
+     margin-top: 50px;
+     margin-left: 50px;
+}
+
+.T3_2
+{
+     margin-top: 120px;
+     margin-left: 120px;
+}
+
+.T3_3
+{
+     margin-top: 190px;
+     margin-left: 190px;
+}
+/* Четвертое Задание */
+.T4_1
+{
+     margin-top: 50px;
+     margin-left: 50px;
+     background-color: red;
+}
+
+.T4_2
+{
+     margin-top: 120px;
+     margin-left: 120px;
+     background-color: blue;
+}
+
+.T4_3
+{
+     margin-top: 190px;
+     margin-left: 190px;
+     background-color: green;
+}
+/* Пятое Задание */
+.T5_1
+{
+     margin-top: 50px;
+     margin-left: 50px;
+     background-color: red;
+}
+
+.T5_2
+{
+     margin-top: 120px;
+     margin-left: 120px;
+     background-color: blue;
+     z-index: 1;
+}
+
+.T5_3
+{
+     margin-top: 190px;
+     margin-left: 190px;
+     background-color: green;
+}
+/* Шестое Задание */
+.T6_1
+{
+     margin-top: 50px;
+     margin-left: 50px;
+     background-color: red;
+     z-index: 1;
+}
+
+.T6_2
+{
+     margin-top: 120px;
+     margin-left: 120px;
+     background-color: blue;
+     
+}
+
+.T6_3
+{
+     margin-top: 190px;
+     margin-left: 190px;
+     background-color: green;
+     z-index: 1;
+}
+/* Седьмое Задание */
+.T7_1
+{
+     margin-top: 50px;
+     margin-left: 50px;
+     background-color: red;
+     z-index: 3;
+}
+
+.T7_2
+{
+     margin-top: 120px;
+     margin-left: 120px;
+     background-color: blue;
+     z-index: 2;
+}
+
+.T7_3
+{
+     margin-top: 190px;
+     margin-left: 190px;
+     background-color: green;
+     z-index: 1;
+}
+/* Восьмое Задание */
+.GreenBorder
+{
+     position: relative;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	border: 1px solid green;
+}
+.T8_1
+{
+     border: 1px solid red;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 100px;
+	height: 100px;
+}
+/* Девятое Задание */
+.GreenFilledBorder
+{
+     position: relative;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	background-color: mediumspringgreen;
+}
+.T9_1
+{
+	position: absolute;
+	left: 60px;
+	top: 60px;
+	width: 100px;
+	height: 100px;
+     background-color: white;
+}
+.T9_2
+{
+	position: absolute;
+	right: 60px;
+	bottom: 60px;
+	width: 100px;
+	height: 100px;
+     background-color: white;
+}
+
+/* Десфтое Задание */
+.BlackBorder
+{
+     position: relative;
+	width: 200px;
+	height: 430px;
+	margin: auto;
+	border: 1px solid black;
+}
+.RedSircle
+{
+     border: 1px solid black;
+	background-color: red;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+.YellowSircle
+{
+     background-color: yellow;
+	border: 1px solid black;
+	position: absolute;
+	left: 50px;
+	top: 160px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+.GreenSircle
+{
+     border: 1px solid black;
+	background-color: green;
+	position: absolute;
+	left: 50px;
+	top: 270px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+/* Одинадцатое Задание */
+
+.GreenFace
+{
+     position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+     border-radius: 100%;
+     background-color: mediumspringgreen;
+}
+
+.EyeLeft
+{
+     position: absolute;
+     background-color: white;
+     border-radius: 100%;
+     width: 80px;
+     height: 80px;
+     top: 80px;
+     left: 80px;
+     z-index: 3;
+}
+.EyeRight
+{
+     position: absolute;
+     background-color: white;
+     border-radius: 100%;
+     width: 80px;
+     height: 80px;
+     top: 80px;
+     right: 80px;
+     z-index: 3;
+}
+
+.SquareNose
+{
+     position: absolute;
+	top: 170px;
+     left: 170px;
+	width: 60px;
+	height: 60px;
+     background-color: white;
+}
+.Mouth
+{
+     position: absolute;
+	top: 270px;
+     left: 100px;
+	width: 200px;
+	height: 20px;
+     background-color: white;
+}
+/* Двенадцатое Задание */
+
+.YellowFace
+{
+     position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+     border-radius: 100%;
+     background-color: yellow;
+     
+}
+.CircleNose
+{
+     position: absolute;
+	top: 170px;
+     left: 170px;
+	width: 60px;
+	height: 60px;
+     border-radius: 100%;
+     background-color: white;
+     z-index: 3;
+}
+.Mouth1
+{
+     background-color: white;
+	position: absolute;
+	left: 100px;
+	top: 155px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	z-index: 1;
+}
+.Mouth2
+{
+     background-color: yellow;
+	position: absolute;
+	left: 50px;
+	top: 30px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	z-index: 2;
+}

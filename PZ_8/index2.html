@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
-            .box {
+            .box{
                 display: flex;
                 flex-direction: column;
                 width: 300px;
@@ -14,42 +14,40 @@
                 justify-content: center;
                 color: brown;
             }
-
-            fieldset {
+            fieldset{
                 display: flex;
                 flex-direction: column;
-                border-color: black;
-                background-color:white;
+                border-color: aqua;
+                background-color:antiquewhite;
                 border-radius: 15px;
+                
             }
-
             .form-group {
                 display: flex;
                 margin-bottom: 5px;
             }
-
-            h3 {
+            h3{
                 margin-left: 5px;
             }
-
-            legend {
+            legend{
                 color: rgb(1, 186, 186);
             }
-            
-            label {
+            label{
                 margin-right: 40px;
             }
-
-            .bt {
-                cursor: pointer;
-                border-radius: 5px;
-                border:1px solid rgb(2, 152, 152);
-                background-color: azure;
-                font-size: 20px;
-                padding: 10px;
-                color: red;
-                margin-top: 10px;
+            .bt{
+            cursor: pointer;
+            border-radius: 5px;
+            border:1px solid rgb(2, 152, 152);
+            background-color: azure;
+            font-size: 20px;
+            padding: 10px;
+            color: red;
+            margin-top: 10px;
             }
+            
+            
+            
         </style>
     </head>
     <body>
@@ -74,27 +72,37 @@
                     <input type="date" >
                 </div>
             </fieldset>
+            
             <fieldset>
                 <legend>Персональная информация</legend>
                 <div class="form-group">
-                    <label>Возраст</label>
-                    <input type="number" min="1" max="100" step="1">
+                        <label>Возраст</label>
+                        <input type="number" min="1" max="100" step="1">
                 </div>
+            
                 <div class="form-group">
                     <label>Любимая кухня</label>
                     <select>
-                        <option>Русская</option>
-                        <!-- Другие варианты -->
+                            <option>Русская</option>
+                            <option>Русская</option>
+                            <option>Русская</option>
+                            <option>Русская</option>
+                            <!-- Другие варианты -->
                     </select>
                 </div>
+                
                 <div class="form-group">
                     <label>Какие блюда Вы хотели бы увидеть в меню?</label>
                     <textarea></textarea>
                 </div>
             </fieldset>
+            
             <fieldset>
                 <legend>Оценка нашего заведения</legend>
+
+        
                 <p>Почему Вы выбрали наше заведение</p>
+            
                 <div class="form-group">
                     <input type="radio" name="reason"> Увидел рекламу
                 </div>
@@ -108,6 +116,7 @@
                 <div class="form-group">
                     <input type="radio" name="reason"> Да
                 </div>
+                
                 <div class="form-group">
                     <input type="radio" name="reason"> Нет
                 </div>
