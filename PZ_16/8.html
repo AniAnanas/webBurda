@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			CSS: Адаптивное изменение блока при разных размерах экрана – schoolsw3.com
+		</title>
+		<style>
+			.example {
+				font-size: 30px;
+				padding: 20px;
+				border: 2px solid #333;
+				background: lightgrey;
+				margin: 20px 0;
+				transition: all 0.3s ease; /* Плавные переходы */
+			}
+
+			/* Стили для средних экранов (600-900px) */
+			@media screen and (max-width: 900px) and (min-width: 600px) {
+				.example {
+					font-size: 50px;
+					padding: 50px;
+					border: 8px solid black;
+					background: yellow;
+					color: black;
+				}
+			}
+
+			/* Дополнительный медиазапрос для маленьких экранов */
+			@media screen and (max-width: 599px) {
+				.example {
+					font-size: 20px;
+					background: lightcoral;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS: Адаптивное изменение блока</h1>
+
+		<div class="example">Пример блока DIV</div>
+
+		<p>Изменение стилей блока в зависимости от ширины экрана:</p>
+		<ul>
+			<li><strong>Ширина ≥901px</strong> - стандартные стили</li>
+			<li>
+				<strong>Ширина 600-900px</strong> - увеличенный размер, желтый фон
+			</li>
+			<li>
+				<strong>Ширина ≤599px</strong> - уменьшенный текст, красноватый фон
+			</li>
+		</ul>
+
+		<p><strong>Измените размер окна браузера, чтобы увидеть эффект</strong></p>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			CSS: Адаптивный размер шрифта при изменении экрана – schoolsw3.com
+		</title>
+		<style>
+			.example {
+				background-color: lightgrey;
+				padding: 20px;
+				transition: font-size 0.3s ease; /* Плавное изменение размера */
+			}
+
+			/* Для экранов шире 600px */
+			@media screen and (min-width: 601px) {
+				.example {
+					font-size: 80px;
+				}
+			}
+
+			/* Для экранов уже 600px */
+			@media screen and (max-width: 600px) {
+				.example {
+					font-size: 30px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS: Адаптивный размер шрифта</h1>
+
+		<div class="example">Пример текста в блоке</div>
+
+		<p>Измените размер окна браузера, чтобы увидеть эффект:</p>
+		<ul>
+			<li>При ширине браузера ≤600px - размер шрифта 30px</li>
+			<li>При ширине браузера ≥601px - размер шрифта 80px</li>
+		</ul>
+	</body>
+</html>

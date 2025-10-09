@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS: Ориентация в адаптивных медиазапросах - schoolsw3.com</title>
+		<style>
+			body {
+				background-color: lightgreen;
+				transition: background-color 0.5s ease; /* Плавное изменение цвета */
+			}
+
+			@media only screen and (orientation: landscape) {
+				body {
+					background-color: lightblue;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS: Определение ориентации экрана</h1>
+
+		<p>
+			Измените размер окна браузера. В зависимости от ориентации экрана
+			изменится цвет фона:
+		</p>
+		<ul>
+			<li>
+				<strong>Альбомная ориентация</strong> (ширина > высоты) - светло-голубой
+				фон
+			</li>
+			<li>
+				<strong>Портретная ориентация</strong> (высота > ширины) -
+				светло-зелёный фон
+			</li>
+		</ul>
+
+		<p>
+			Попробуйте повернуть ваше устройство или изменить размер окна браузера,
+			чтобы увидеть эффект.
+		</p>
+	</body>
+</html>
