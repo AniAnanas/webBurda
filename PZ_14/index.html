@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animations</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="header">14. Animations</h1>
+		</header>
+		<main>
+			<article class="animations__container">
+				<section class="animation">
+					<h2 class="animation__title">Блок 1.Движение</h2>
+					<p class="animation__tag">Движение повторится 3 раза</p>
+					<div class="animation__container animation__container__default">
+						<div class="animation__item" id="b1"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 2.Бесконечное движение</h2>
+					<p class="animation__tag">Движение будет бесконечным</p>
+					<div class="animation__container animation__container__default">
+						<div class="animation__item" id="b2"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 3.Смена фона</h2>
+					<div class="animation__container animation__container__large">
+						<div
+							id="b3"
+							class="animation__item animation__item__filled animation__item__large"
+						></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 4.Движение по квадрату</h2>
+					<div
+						class="animation__container animation__container__b4 animation__container__large"
+					>
+						<div id="b4" class="animation__item animation__item__flex"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">
+						Блок 5.Движение по квадрату и смена фона
+					</h2>
+					<div
+						class="animation__container animation__container__b4 animation__container__large"
+					>
+						<div
+							id="b5"
+							class="animation__item animation__item__filled animation__item__flex"
+						></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 6.Движение туда-сюда</h2>
+					<p class="amimation__tag">
+						Здесь движение реализовано через 3 ключевые точки: 0%, 50%, 100%
+					</p>
+					<div
+						class="animation__container animation__container__default animation__container__b4"
+					>
+						<div id="b6-1" class="animation__item animation__item__flex"></div>
+					</div>
+					<p class="amimation__tag">
+						Здесь движение реализовано через animation-direction: alternate
+					</p>
+					<div
+						class="animation__container animation__container__default animation__container__b4"
+					>
+						<div id="b6-2" class="animation__item animation__item__flex"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 7.Индикатор</h2>
+					<div id="wrapper">
+						<div id="test"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 8.Пауза</h2>
+					<p class="animation__tag">
+						Наведите мышь на элемент - элемент начнет двигаться, уберите -
+						перестанет
+					</p>
+					<div class="animation__container animation__container__default">
+						<div id="b8" class="animation__item"></div>
+					</div>
+
+					<p class="animation__tag">
+						Наведите мышь на синий блок - элемент под ним элемент начнет
+						двигаться, уберите - перестанет
+					</p>
+					<div
+						class="animation__container animation__container__b8 animation__container__large"
+					>
+						<div class="animation__hover-item">Наведись на меня</div>
+						<div id="b8-2" class="animation__item"></div>
+					</div>
+				</section>
+				<section class="animation">
+					<h2 class="animation__title">Блок 9.Падающий мячик</h2>
+					<div id="wrapper2">
+						<div id="ball"></div>
+					</div>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>

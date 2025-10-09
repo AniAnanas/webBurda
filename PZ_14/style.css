@@ -1,0 +1,287 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+	margin: 10px 0;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.animations__container {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.animation__container {
+	display: flex;
+	align-items: center;
+
+	width: 80vw;
+	border: 2px dotted rgb(85, 85, 237);
+	border-radius: 1rem;
+}
+
+.animation__container__b8 {
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.animation__container__b4 {
+	display: block;
+	position: relative;
+	align-items: unset;
+}
+
+.animation__container__default {
+	height: 150px;
+}
+
+.animation__container__large {
+	height: 400px;
+}
+
+.animation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.animation__item {
+	aspect-ratio: 1/1;
+	height: 100px;
+	margin-left: 25px;
+	border: 5px solid rgb(241, 59, 59);
+}
+
+.animation__item__flex {
+	margin: 0;
+}
+
+.animation__hover-item {
+	align-content: center;
+	text-align: center;
+
+	height: 100px;
+	width: 300px;
+	border: 5px solid rgb(85, 85, 237);
+}
+
+.animation__hover-item:hover + #b8-2 {
+	animation-play-state: running;
+}
+
+.animation__item__filled {
+	background-color: rgb(241, 59, 59);
+}
+.animation__item__large {
+	height: 300px;
+	margin-left: 50px;
+}
+
+@keyframes block1 {
+	from {
+		margin-left: 25px;
+	}
+	to {
+		margin-left: 500px;
+	}
+}
+#b1 {
+	animation: block1 4s 3;
+}
+#b8 {
+	animation: block1 4s infinite;
+	animation-play-state: paused;
+}
+#b8:hover {
+	animation-play-state: running;
+}
+
+#b8-2 {
+	animation: block1 4s infinite;
+	animation-play-state: paused;
+}
+
+@keyframes block2 {
+	from {
+		margin-left: 25px;
+	}
+	to {
+		margin-left: 500px;
+	}
+}
+#b2 {
+	animation: block2 4s infinite;
+}
+
+@keyframes block3 {
+	from {
+		background-color: rgb(241, 59, 59);
+	}
+	to {
+		background-color: rgb(85, 85, 237);
+	}
+}
+#b3 {
+	animation: block3 2s infinite alternate;
+}
+
+@keyframes block4 {
+	0% {
+		top: 25px;
+		left: 25px;
+	}
+	25% {
+		top: 25px;
+		left: calc(100% - 125px);
+	}
+	50% {
+		top: calc(100% - 125px);
+		left: calc(100% - 125px);
+	}
+	75% {
+		top: calc(100% - 125px);
+		left: 25px;
+	}
+	100% {
+		top: 25px;
+		left: 25px;
+	}
+}
+#b4 {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	animation: block4 5s linear infinite;
+}
+
+#b5 {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	animation: block4 5s linear infinite, block3 2s infinite alternate;
+}
+
+@keyframes block6-1 {
+	0% {
+		top: 25px;
+		left: 25px;
+	}
+	50% {
+		top: 25px;
+		left: calc(100% - 125px);
+	}
+	100% {
+		top: 25px;
+		left: 25px;
+	}
+}
+
+@keyframes block6-2 {
+	from {
+		top: 25px;
+		left: 25px;
+	}
+	to {
+		top: 25px;
+		left: calc(100% - 125px);
+	}
+}
+
+#b6-1 {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	animation: block6-1 3s infinite;
+}
+
+#b6-2 {
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	animation: block6-2 3s infinite alternate;
+}
+
+@keyframes test {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+#wrapper {
+	margin: 0px auto;
+	width: 50%;
+	height: 30px;
+	border: 1px solid red;
+}
+#test {
+	background: red;
+	width: 0%;
+	height: 30px;
+
+	-webkit-animation: test 5s linear 1 forwards;
+	animation: test 5s linear 1 forwards;
+}
+
+@keyframes bouncing {
+	40%,
+	70%,
+	90% {
+		animation-timing-function: ease-out;
+		bottom: 0;
+	}
+	0% {
+		bottom: 200px;
+		left: 0;
+		animation-timing-function: ease-in;
+	}
+	55% {
+		bottom: 50px;
+		animation-timing-function: ease-in;
+	}
+	80% {
+		bottom: 25px;
+		animation-timing-function: ease-in;
+	}
+	95% {
+		bottom: 10px;
+		animation-timing-function: ease-in;
+	}
+	100% {
+		left: 110px;
+		bottom: 0;
+		animation-timing-function: ease-out;
+	}
+}
+
+#wrapper2 {
+	margin: 30px auto;
+	width: 220px;
+	height: 220px;
+	border: 1px solid red;
+	position: relative;
+}
+#ball {
+	background: red;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+
+	animation: bouncing 5s infinite;
+}
