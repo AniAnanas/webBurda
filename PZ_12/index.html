@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Grid Практика</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				padding: 20px;
+			}
+
+			.task-section {
+				margin-bottom: 40px;
+				padding: 20px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+			}
+
+			.task-title {
+				color: #2c3e50;
+				border-bottom: 2px solid #3498db;
+				padding-bottom: 10px;
+			}
+
+			.container {
+				display: grid;
+				margin: 20px 0;
+				background-color: #f9f9f9;
+				padding: 10px;
+				border-radius: 5px;
+			}
+
+			.item {
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 1px solid black;
+				background-color: #3498db;
+				color: white;
+				font-weight: bold;
+			}
+
+			.container1 {
+				grid-template-columns: 100px 150px 200px;
+			}
+
+			.container2 {
+				grid-template-columns: 1fr 1fr 2fr;
+			}
+
+			.container3 {
+				grid-template-columns: 1fr 1.5fr 2.5fr;
+			}
+
+			.container4 {
+				grid-template-columns: 100px 1fr 1fr;
+			}
+
+			.container5 {
+				grid-template-columns: 20% 1fr 1fr;
+			}
+
+			.container6 {
+				grid-template-columns: repeat(4, 100px) repeat(3, 2fr);
+			}
+
+			.container7 {
+				grid-template-columns: 100px 150px auto;
+			}
+
+			.container8 {
+				grid-template-columns: repeat(auto-fill, 200px);
+				margin-bottom: 100px;
+			}
+
+			.container9 {
+				max-width: 600px;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			}
+
+			.container9-1 {
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			}
+
+			.container9-2 {
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			}
+
+			.container10 {
+				grid-template-columns: minmax(100px, 300px) minmax(200px, 1fr);
+			}
+
+			.container11 {
+				grid-template-rows: 100px 150px 200px;
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			.container11-item {
+				height: 100%;
+			}
+
+			/* Контейнеры с объединением ячеек */
+			.merged-container {
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 100px 100px 100px;
+			}
+
+			.merged-rows {
+				grid-row: span 2;
+				background-color: #e74c3c;
+				height: 100%;
+			}
+
+			.merged-cols {
+				grid-column: span 2;
+				background-color: #2ecc71;
+			}
+
+			.merged-both {
+				height: 100%;
+				grid-row: span 2;
+				grid-column: span 2;
+				background-color: #9b59b6;
+			}
+
+			.gap-container {
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-gap: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Практическая работа №12: Изучение технологии CSS Grid</h1>
+
+		<!-- Количество и ширина столбцов -->
+		<section class="task-section">
+			<h2 class="task-title">1. Количество и ширина столбцов</h2>
+			<p>Три столбца: первый 100px, второй 150px, третий 200px</p>
+			<div class="container container1">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Единица fr -->
+		<section class="task-section">
+			<h2 class="task-title">2. Единица fr</h2>
+			<p>Три столбца: третий в два раза больше первого и второго</p>
+			<div class="container container2">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Дробные единицы fr -->
+		<section class="task-section">
+			<h2 class="task-title">3. Дробные единицы fr</h2>
+			<p>
+				Второй столбец в 1.5 раза больше первого, третий в 2.5 раза больше
+				первого
+			</p>
+			<div class="container container3">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Пиксели и fr -->
+		<section class="task-section">
+			<h2 class="task-title">4. Пиксели и единицы fr</h2>
+			<p>Первый столбец 100px, остальные два одинакового размера</p>
+			<div class="container container4">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Проценты и fr -->
+		<section class="task-section">
+			<h2 class="task-title">5. Проценты и единицы fr</h2>
+			<p>Первый столбец 20%, остальные два одинакового размера</p>
+			<div class="container container5">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Функция repeat -->
+		<section class="task-section">
+			<h2 class="task-title">6. Функция repeat</h2>
+			<p>4 столбца по 100px и 3 столбца по 2fr</p>
+			<div class="container container6">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+			</div>
+		</section>
+
+		<!-- Значение auto -->
+		<section class="task-section">
+			<h2 class="task-title">7. Значение auto</h2>
+			<p>Первый столбец 100px, второй 150px, третий - оставшееся место</p>
+			<div class="container container7">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- auto-fill -->
+		<section class="task-section">
+			<h2 class="task-title">8. Значение auto-fill</h2>
+			<p>Ширина столбца 200px. Попробуйте изменить размер окна браузера</p>
+			<div class="container container8">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+			</div>
+		</section>
+
+		<!-- auto-fit -->
+		<section class="task-section">
+			<h2 class="task-title">9. Значение auto-fit</h2>
+			<p>9 элементов, размещённых в три ряда с помощью auto-fit</p>
+			<div class="container container9">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+			</div>
+		</section>
+
+		<section class="task-section">
+			<h2 class="task-title">9.5 Разница auto-fill и auto-fit</h2>
+			<p></p>
+			<div class="container container9-1">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+			<div class="container container9-2">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</section>
+
+		<!-- minmax -->
+		<section class="task-section">
+			<h2 class="task-title">10. Функция minmax</h2>
+			<p>Первый столбец от 100px до 300px, второй от 200px до 1fr</p>
+			<div class="container container10">
+				<div class="item">minmax(100px, 300px)</div>
+				<div class="item">minmax(200px, 1fr)</div>
+			</div>
+		</section>
+
+		<!-- Ряды -->
+		<section class="task-section">
+			<h2 class="task-title">11. Количество и ширина рядов</h2>
+			<p>Три ряда: первый 100px, второй 150px, третий 200px</p>
+			<div class="container container11">
+				<div class="item container11-item">1</div>
+				<div class="item container11-item">2</div>
+				<div class="item container11-item">3</div>
+				<div class="item container11-item">4</div>
+				<div class="item container11-item">5</div>
+				<div class="item container11-item">6</div>
+				<div class="item container11-item">7</div>
+				<div class="item container11-item">8</div>
+				<div class="item container11-item">9</div>
+			</div>
+		</section>
+
+		<!-- Объединение рядов -->
+		<section class="task-section">
+			<h2 class="task-title">12. Объединение рядов</h2>
+			<p>Пример объединения рядов (красные элементы)</p>
+			<div class="container merged-container">
+				<div class="item merged-rows">Объединение 2 рядов</div>
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+			</div>
+		</section>
+
+		<!-- Объединение столбцов -->
+		<section class="task-section">
+			<h2 class="task-title">13. Объединение столбцов</h2>
+			<p>Пример объединения столбцов (зеленые элементы)</p>
+			<div class="container merged-container">
+				<div class="item merged-cols">Объединение 2 столбцов</div>
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+			</div>
+		</section>
+
+		<!-- Комбинации объединений -->
+		<section class="task-section">
+			<h2 class="task-title">14. Комбинации объединений</h2>
+			<p>Объединение и по рядам, и по столбцам (фиолетовые элементы)</p>
+			<div class="container merged-container">
+				<div class="item merged-both">Объединение 2x2</div>
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+			</div>
+		</section>
+
+		<!-- Расстояние между элементами -->
+		<section class="task-section">
+			<h2 class="task-title">15. Расстояние между элементами</h2>
+			<p>Расстояние между столбцами и рядами по 10px</p>
+			<div class="container gap-container">
+				<div class="item">1</div>
+				<div class="item">2</div>
+				<div class="item">3</div>
+				<div class="item">4</div>
+				<div class="item">5</div>
+				<div class="item">6</div>
+				<div class="item">7</div>
+				<div class="item">8</div>
+				<div class="item">9</div>
+			</div>
+		</section>
+	</body>
+</html>
